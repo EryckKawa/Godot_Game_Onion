@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://cts8bmultmff"]
+
+[ext_resource type="Script" path="res://scripts/water.gd" id="1_61vo2"]
+[ext_resource type="Texture2D" uid="uid://derrgebsiljdk" path="res://assets/Seasonal Tilesets/5 - Misc. universal tiles/Water_frames (16 x 32).png" id="1_tmsmx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xxalw"]
+size = Vector2(32, 19)
+
+[node name="water" type="Area2D"]
+collision_layer = 2
+collision_mask = 3
+script = ExtResource("1_61vo2")
+
+[node name="sprite_water" type="Sprite2D" parent="."]
+texture_repeat = 2
+texture = ExtResource("1_tmsmx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 6.5)
+shape = SubResource("RectangleShape2D_xxalw")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
