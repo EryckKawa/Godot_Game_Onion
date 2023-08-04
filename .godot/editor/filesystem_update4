@@ -1,4 +1,5 @@
-res://actors/enemy.tscn
 res://worlds/world_01.tscn
+res://singletons/globals.gd
+res://actors/enemy.tscn
 res://prefabs/hitbox.tscn
 res://actors/player.tscn

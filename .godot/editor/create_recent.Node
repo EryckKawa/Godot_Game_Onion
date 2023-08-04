@@ -1,3 +1,9 @@
+Label
+TextureRect
+HBoxContainer
+MarginContainer
+Control
+CanvasLayer
 RemoteTransform2D
 AnimationPlayer
 CollisionShape2D
@@ -8,7 +14,6 @@ Sprite2D
 CharacterBody2D
 AudioStreamPlayer2D
 AnimatedSprite2D
-TextureRect
 ParallaxLayer
 AnimatableBody2D
 ParallaxBackground
