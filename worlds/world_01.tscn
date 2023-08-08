@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=3 uid="uid://ddpjbj26mc2nk"]
+[gd_scene load_steps=33 format=3 uid="uid://ddpjbj26mc2nk"]
 
 [ext_resource type="Texture2D" uid="uid://ckqsxwiac11f2" path="res://assets/Seasonal Tilesets/1 - Grassland/Terrain (16 x 16).png" id="1_duldg"]
 [ext_resource type="Script" path="res://scripts/world_01.gd" id="1_yid6f"]
@@ -16,11 +16,13 @@
 [ext_resource type="Script" path="res://scripts/fallzone.gd" id="13_q5ife"]
 [ext_resource type="PackedScene" uid="uid://220bdtcbmunn" path="res://prefabs/coin.tscn" id="14_5ewi4"]
 [ext_resource type="PackedScene" uid="uid://dbq6tj0m44wd4" path="res://actors/enemy.tscn" id="15_4ed3e"]
+[ext_resource type="Script" path="res://scripts/hud_manager.gd" id="17_2f77g"]
 [ext_resource type="Texture2D" uid="uid://dgfvrh8yg3sch" path="res://assets/Mini FX, Items _ UI/Common Pick-ups/Coin-Sprites/00_Coin-Sprites.png" id="17_dpux0"]
 [ext_resource type="Texture2D" uid="uid://byt5ar30rr4lk" path="res://assets/Mini FX, Items _ UI/Common Pick-ups/Coin-Sprites/01_Coin-Sprites.png" id="18_d4tes"]
 [ext_resource type="Texture2D" uid="uid://dn4vcy65s8hmt" path="res://assets/Mini FX, Items _ UI/Common Pick-ups/Coin-Sprites/02_Coin-Sprites.png" id="19_rto04"]
 [ext_resource type="Texture2D" uid="uid://bstuh08nhmt8u" path="res://assets/Mini FX, Items _ UI/Common Pick-ups/Coin-Sprites/03_Coin-Sprites.png" id="20_wb17b"]
 [ext_resource type="FontFile" uid="uid://c5d44xlo7itim" path="res://assets/fonts/RevMiniPixel.ttf" id="21_of0qj"]
+[ext_resource type="Texture2D" uid="uid://c23410evk0csy" path="res://assets/Sprite Pack 2/1 - Onion Lad/Life-Counter-Icon.png" id="22_l8m5a"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_4r764"]
 tile_data = PackedInt32Array(0, 65537, 1)
@@ -279,6 +281,7 @@ shader_parameter/move_speed = 0.01
 
 [sub_resource type="AnimatedTexture" id="AnimatedTexture_nonl6"]
 frames = 4
+speed_scale = 3.3
 frame_0/texture = ExtResource("17_dpux0")
 frame_1/texture = ExtResource("18_d4tes")
 frame_1/duration = 1.0
@@ -517,6 +520,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("17_2f77g")
 
 [node name="container" type="MarginContainer" parent="HUD/control"]
 layout_mode = 1
@@ -601,19 +605,28 @@ layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 8
 
-[node name="coins_icon" type="TextureRect" parent="HUD/control/container/life_container"]
+[node name="life_icon" type="TextureRect" parent="HUD/control/container/life_container"]
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 0
-texture = SubResource("AnimatedTexture_nonl6")
+texture = ExtResource("22_l8m5a")
 
-[node name="coins_counter" type="Label" parent="HUD/control/container/life_container"]
+[node name="life_separator" type="Label" parent="HUD/control/container/life_container"]
 layout_mode = 2
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 4
 theme_override_fonts/font = ExtResource("21_of0qj")
 theme_override_font_sizes/font_size = 8
-text = "000"
+text = "X"
+vertical_alignment = 1
+
+[node name="life_counter" type="Label" parent="HUD/control/container/life_container"]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("21_of0qj")
+theme_override_font_sizes/font_size = 8
+text = "03"
 vertical_alignment = 1
 
 [connection signal="body_entered" from="deathzones/fallzone" to="deathzones/fallzone" method="_on_body_entered"]

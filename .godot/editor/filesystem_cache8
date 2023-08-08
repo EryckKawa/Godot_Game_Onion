@@ -1,10 +1,10 @@
 2a60927148abd1d33b818b535e306557
-::res://::1691174340
+::res://::1691517593
 icon.svg::CompressedTexture2D::4357829319669602695::1690572554::1691174142::1::::<><>::
 README.md::TextFile::-1::1690572554::0::1::::<><>::
-::res://actors/::1691179436
-enemy.tscn::PackedScene::7264397607557651283::1691179435::0::1::::<><>::uid://btd0vyhicrtnh<>res://scripts/enemy.gd<>uid://1acjgpwouwji<>uid://bc62phkdbx0hs<>uid://hhfwckv7xuf7
-player.tscn::PackedScene::6465409323318285062::1691179436::0::1::::<><>::res://scripts/player.gd<>uid://dyc6dy7p1y0un<>uid://bde8lwn13gsog<>uid://bnjsxg3f00nql<>uid://csapdncwrbwg0
+::res://actors/::1691182760
+enemy.tscn::PackedScene::7264397607557651283::1691182760::0::1::::<><>::uid://btd0vyhicrtnh<>res://scripts/enemy.gd<>uid://1acjgpwouwji<>uid://bc62phkdbx0hs<>uid://hhfwckv7xuf7
+player.tscn::PackedScene::6465409323318285062::1691182760::0::1::::<><>::res://scripts/player.gd<>uid://dyc6dy7p1y0un<>uid://bde8lwn13gsog<>uid://bnjsxg3f00nql<>uid://csapdncwrbwg0
 ::res://assets/::1691175727
 ::res://assets/fonts/::1691175737
 RevMiniPixel.ttf::FontFile::6886513616311919656::1691174731::1691175737::1::::<><>::
@@ -103,7 +103,7 @@ Snack_machine_Bench_Trash_bin (16 x 16).png::CompressedTexture2D::15267452992090
 Water_frames (16 x 32).png::CompressedTexture2D::7476154963558084332::1690572554::1690572554::1::::<><>::
 ::res://assets/Sprite Pack 2/::1691181289
 LICENSE.txt::TextFile::-1::1690572554::0::1::::<><>::
-::res://assets/Sprite Pack 2/1 - Onion Lad/::1691181289
+::res://assets/Sprite Pack 2/1 - Onion Lad/::1691181291
 Hurt (16 x 16).png::CompressedTexture2D::3638018004948958266::1690572554::1690572554::1::::<><>::
 Idle (16 x 16).png::CompressedTexture2D::7232108792487169483::1690572554::1690572554::1::::<><>::
 Inner_Fists (16 x 16).png::CompressedTexture2D::1226412993566664343::1690572554::1690572554::1::::<><>::
@@ -151,9 +151,9 @@ Reaching_to_Pinch (32 x 32).png::CompressedTexture2D::7440580291183137512::16905
 cartoon-jump-6462.mp3::AudioStreamMP3::7078566065885316049::1690572554::1690572554::1::::<><>::
 jump.wav::AudioStreamWAV::6037157352059519381::1690572554::1690572554::1::::<><>::
 pickupCoin.wav::AudioStreamWAV::8856832265337721170::1690572554::1690572554::1::::<><>::
-::res://prefabs/::1691179435
+::res://prefabs/::1691182760
 coin.tscn::PackedScene::1952356875213591559::1690572554::0::1::::<><>::res://scripts/coin.gd<>uid://cmd50h040wrvk<>uid://xh750cbh2snv<>uid://dygky628fhaoo
-hitbox.tscn::PackedScene::506115543666963570::1691179435::0::1::::<><>::res://scripts/hitbox.gd
+hitbox.tscn::PackedScene::506115543666963570::1691182760::0::1::::<><>::res://scripts/hitbox.gd
 moving_plataform.tscn::PackedScene::2489315336615017018::1690572554::0::1::::<><>::res://scripts/moving_plataform.gd<>uid://c36jvg7g8mblr
 water.tscn::PackedScene::180752773657030567::1690572554::0::1::::<><>::res://scripts/water.gd<>uid://derrgebsiljdk
 ::res://scripts/::1690572554
@@ -169,5 +169,5 @@ world_01.gd::GDScript::-1::1690572554::0::1::::<>Node2D<>::
 world_01.gdshader::Shader::-1::1690572554::0::1::::<><>::
 ::res://singletons/::1691179435
 globals.gd::GDScript::-1::1691179435::0::1::::<>Node<>::
-::res://worlds/::1691179435
-world_01.tscn::PackedScene::7401343002877615008::1691179435::0::1::::<><>::uid://ckqsxwiac11f2<>res://scripts/world_01.gd<>uid://cs4i6i4dqdoly<>uid://cyd5l2cnw14ra<>uid://cy0mhhhcpvbdk<>uid://dt6qdoibrqst2<>res://shaders/world_01.gdshader<>uid://bqy43eawpiig4<>uid://i0q8s46nu81f<>uid://woyqub4vagq6<>uid://derrgebsiljdk<>uid://bbp3wo3y3ijeo<>uid://cts8bmultmff<>res://scripts/fallzone.gd<>uid://220bdtcbmunn<>uid://dbq6tj0m44wd4<>uid://dgfvrh8yg3sch<>uid://byt5ar30rr4lk<>uid://dn4vcy65s8hmt<>uid://bstuh08nhmt8u<>uid://c5d44xlo7itim
+::res://worlds/::1691182760
+world_01.tscn::PackedScene::7401343002877615008::1691182760::0::1::::<><>::uid://ckqsxwiac11f2<>res://scripts/world_01.gd<>uid://cs4i6i4dqdoly<>uid://cyd5l2cnw14ra<>uid://cy0mhhhcpvbdk<>uid://dt6qdoibrqst2<>res://shaders/world_01.gdshader<>uid://bqy43eawpiig4<>uid://i0q8s46nu81f<>uid://woyqub4vagq6<>uid://derrgebsiljdk<>uid://bbp3wo3y3ijeo<>uid://cts8bmultmff<>res://scripts/fallzone.gd<>uid://220bdtcbmunn<>uid://dbq6tj0m44wd4<>uid://dgfvrh8yg3sch<>uid://byt5ar30rr4lk<>uid://dn4vcy65s8hmt<>uid://bstuh08nhmt8u<>uid://c5d44xlo7itim<>uid://c23410evk0csy

@@ -3,6 +3,7 @@ extends CharacterBody2D
 const SPEED = 200.0
 const JUMP_FORCE = -300.0
 
+var life := 3
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var is_jumping := false
 @onready var jump_sound = $jumpsound
@@ -45,6 +46,7 @@ func _physics_process(delta):
 
 func _on_hurtbox_body_entered(body):
 	if body.is_in_group("enemies"):
+		Globals.life -= 1
 		queue_free()
 
 func follow_camera(camera):

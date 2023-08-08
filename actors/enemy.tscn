@@ -180,7 +180,7 @@ radius = 4.0
 height = 12.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rwjbq"]
-size = Vector2(8, 2)
+size = Vector2(10, 2)
 
 [node name="enemy" type="CharacterBody2D" groups=["enemies"]]
 collision_layer = 4
@@ -214,7 +214,6 @@ collision_mask = 6
 [node name="hitbox" parent="." instance=ExtResource("5_lyj5r")]
 
 [node name="colisor" type="CollisionShape2D" parent="hitbox"]
-visible = false
 position = Vector2(0, -11)
 shape = SubResource("RectangleShape2D_rwjbq")
 
