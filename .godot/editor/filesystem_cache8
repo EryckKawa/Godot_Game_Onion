@@ -1,16 +1,16 @@
 2a60927148abd1d33b818b535e306557
-::res://::1691517593
+::res://::1693941099
 icon.svg::CompressedTexture2D::4357829319669602695::1690572554::1691174142::1::::<><>::
 README.md::TextFile::-1::1690572554::0::1::::<><>::
-::res://actors/::1691182760
-enemy.tscn::PackedScene::7264397607557651283::1691182760::0::1::::<><>::uid://btd0vyhicrtnh<>res://scripts/enemy.gd<>uid://1acjgpwouwji<>uid://bc62phkdbx0hs<>uid://hhfwckv7xuf7
-player.tscn::PackedScene::6465409323318285062::1691182760::0::1::::<><>::res://scripts/player.gd<>uid://dyc6dy7p1y0un<>uid://bde8lwn13gsog<>uid://bnjsxg3f00nql<>uid://csapdncwrbwg0
+::res://actors/::1693939720
+enemy.tscn::PackedScene::7264397607557651283::1693798867::0::1::::<><>::uid://btd0vyhicrtnh<>res://scripts/enemy.gd<>uid://1acjgpwouwji<>uid://bc62phkdbx0hs<>uid://hhfwckv7xuf7
+player.tscn::PackedScene::6465409323318285062::1693939720::0::1::::<><>::res://scripts/player.gd<>uid://dyc6dy7p1y0un<>uid://bde8lwn13gsog<>uid://bnjsxg3f00nql<>uid://csapdncwrbwg0
 ::res://assets/::1691175727
 ::res://assets/fonts/::1691175737
 RevMiniPixel.ttf::FontFile::6886513616311919656::1691174731::1691175737::1::::<><>::
 ::res://assets/Mini FX, Items _ UI/::1690572554
 LICENSE.txt::TextFile::-1::1690572554::0::1::::<><>::
-::res://assets/Mini FX, Items _ UI/Common Pick-ups/::1691174813
+::res://assets/Mini FX, Items _ UI/Common Pick-ups/::1693938567
 Coin (16 x 16).png::CompressedTexture2D::5623167186570868536::1690572554::1690572554::1::::<><>::
 Health_Kit (16 x 16).png::CompressedTexture2D::956272749194122240::1690572554::1690572554::1::::<><>::
 Heart_Spin (16 x 16).png::CompressedTexture2D::292414025297231182::1690572554::1690572554::1::::<><>::
@@ -91,8 +91,12 @@ Winter_entities (16 x 16).png::CompressedTexture2D::2211135642139073865::1690572
 2 - Smaller_mountains.png::CompressedTexture2D::4740598232296420280::1690572554::1690572554::1::::<><>::
 3 - Big_mountain_BG.png::CompressedTexture2D::5178854794115932987::1690572554::1690572554::1::::<><>::
 _Complete_static_BG_(288 x 208).png::CompressedTexture2D::7764284712638577500::1690572554::1690572554::1::::<><>::
-::res://assets/Seasonal Tilesets/5 - Misc. universal tiles/::1690572554
+::res://assets/Seasonal Tilesets/5 - Misc. universal tiles/::1693938592
 Blocks (16 x 16).png::CompressedTexture2D::6802709019124889915::1690572554::1690572554::1::::<><>::
+brick-piece-01.png::CompressedTexture2D::4981105368879669777::1693934695::1693938592::1::::<><>::
+brick-piece-02.png::CompressedTexture2D::6239193929654621675::1693934695::1693938592::1::::<><>::
+brick-piece-03.png::CompressedTexture2D::3569389161926030171::1693934697::1693938592::1::::<><>::
+brick-piece-04.png::CompressedTexture2D::2383302579752583747::1693934697::1693938592::1::::<><>::
 Bubbling_Oil_frames (16 x 32).png::CompressedTexture2D::6478851731520852480::1690572554::1690572554::1::::<><>::
 Flowers (16 x 16).png::CompressedTexture2D::170208294802358537::1690572554::1690572554::1::::<><>::
 House (112 x 96).png::CompressedTexture2D::4580231770397199051::1690572554::1690572554::1::::<><>::
@@ -151,23 +155,30 @@ Reaching_to_Pinch (32 x 32).png::CompressedTexture2D::7440580291183137512::16905
 cartoon-jump-6462.mp3::AudioStreamMP3::7078566065885316049::1690572554::1690572554::1::::<><>::
 jump.wav::AudioStreamWAV::6037157352059519381::1690572554::1690572554::1::::<><>::
 pickupCoin.wav::AudioStreamWAV::8856832265337721170::1690572554::1690572554::1::::<><>::
-::res://prefabs/::1691182760
+::res://prefabs/::1693939720
+box_pieces.tscn::PackedScene::3544972522659724404::1693939720::0::1::::<><>::res://scripts/box_pieces.gd
+break_box.tscn::PackedScene::2504072667907535139::1693939719::0::1::::<><>::res://scripts/break_box.gd<>uid://c36jvg7g8mblr
 coin.tscn::PackedScene::1952356875213591559::1690572554::0::1::::<><>::res://scripts/coin.gd<>uid://cmd50h040wrvk<>uid://xh750cbh2snv<>uid://dygky628fhaoo
-hitbox.tscn::PackedScene::506115543666963570::1691182760::0::1::::<><>::res://scripts/hitbox.gd
+hitbox.tscn::PackedScene::506115543666963570::1693798867::0::1::::<><>::res://scripts/hitbox.gd
 moving_plataform.tscn::PackedScene::2489315336615017018::1690572554::0::1::::<><>::res://scripts/moving_plataform.gd<>uid://c36jvg7g8mblr
 water.tscn::PackedScene::180752773657030567::1690572554::0::1::::<><>::res://scripts/water.gd<>uid://derrgebsiljdk
-::res://scripts/::1690572554
-coin.gd::GDScript::-1::1690572554::0::1::::<>Area2D<>::
-enemy.gd::GDScript::-1::1690572554::0::1::::<>CharacterBody2D<>::
+::res://scripts/::1693939662
+box_pieces.gd::GDScript::-1::1693936011::0::1::::<>RigidBody2D<>::
+break_box.gd::GDScript::-1::1693939662::0::1::::<>CharacterBody2D<>::
+coin.gd::GDScript::-1::1691519656::0::1::::<>Area2D<>::
+enemy.gd::GDScript::-1::1693872969::0::1::::<>CharacterBody2D<>::
 fallzone.gd::GDScript::-1::1690572554::0::1::::<>Area2D<>::
 hitbox.gd::GDScript::-1::1690572554::0::1::::<>Area2D<>::
+hud_manager.gd::GDScript::-1::1691521368::0::1::::<>Control<>::
 moving_plataform.gd::GDScript::-1::1690572554::0::1::::<>Node2D<>::
-player.gd::GDScript::-1::1690572554::0::1::::<>CharacterBody2D<>::
+player.gd::GDScript::-1::1693938878::0::1::::<>CharacterBody2D<>::
 water.gd::GDScript::-1::1690572554::0::1::::<>Area2D<>::
-world_01.gd::GDScript::-1::1690572554::0::1::::<>Node2D<>::
+world_01.gd::GDScript::-1::1693938993::0::1::::<>Node2D<>::
+world_02.gd::GDScript::-1::1693878960::0::1::::<>Node2D<>::
 ::res://shaders/::1690572554
 world_01.gdshader::Shader::-1::1690572554::0::1::::<><>::
-::res://singletons/::1691179435
-globals.gd::GDScript::-1::1691179435::0::1::::<>Node<>::
-::res://worlds/::1691182760
-world_01.tscn::PackedScene::7401343002877615008::1691182760::0::1::::<><>::uid://ckqsxwiac11f2<>res://scripts/world_01.gd<>uid://cs4i6i4dqdoly<>uid://cyd5l2cnw14ra<>uid://cy0mhhhcpvbdk<>uid://dt6qdoibrqst2<>res://shaders/world_01.gdshader<>uid://bqy43eawpiig4<>uid://i0q8s46nu81f<>uid://woyqub4vagq6<>uid://derrgebsiljdk<>uid://bbp3wo3y3ijeo<>uid://cts8bmultmff<>res://scripts/fallzone.gd<>uid://220bdtcbmunn<>uid://dbq6tj0m44wd4<>uid://dgfvrh8yg3sch<>uid://byt5ar30rr4lk<>uid://dn4vcy65s8hmt<>uid://bstuh08nhmt8u<>uid://c5d44xlo7itim<>uid://c23410evk0csy
+::res://singletons/::1691521403
+globals.gd::GDScript::-1::1691521403::0::1::::<>Node<>::
+::res://worlds/::1693939720
+world_01.tscn::PackedScene::7401343002877615008::1693939720::0::1::::<><>::uid://ckqsxwiac11f2<>res://scripts/world_01.gd<>uid://cs4i6i4dqdoly<>uid://cyd5l2cnw14ra<>uid://cy0mhhhcpvbdk<>uid://dt6qdoibrqst2<>res://shaders/world_01.gdshader<>uid://bqy43eawpiig4<>uid://i0q8s46nu81f<>uid://woyqub4vagq6<>uid://derrgebsiljdk<>uid://bbp3wo3y3ijeo<>uid://cts8bmultmff<>res://scripts/fallzone.gd<>uid://220bdtcbmunn<>uid://dbq6tj0m44wd4<>res://scripts/hud_manager.gd<>uid://dgfvrh8yg3sch<>uid://byt5ar30rr4lk<>uid://dn4vcy65s8hmt<>uid://bstuh08nhmt8u<>uid://c5d44xlo7itim<>uid://c23410evk0csy<>uid://bbw8yf51wmaqd
+world_02.tscn::PackedScene::4352560613441934374::1693937810::0::1::::<><>::uid://cyd5l2cnw14ra<>uid://dfssobjgiwksr<>res://scripts/world_02.gd<>uid://ccbqjo8v01c70

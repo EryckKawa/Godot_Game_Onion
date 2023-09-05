@@ -52,3 +52,12 @@ func _on_hurtbox_body_entered(body):
 func follow_camera(camera):
 	var camera_path = camera.get_path()
 	remote_transform.remote_path = camera_path
+
+
+func _on_head_collider_body_entered(body):
+	if body.has_method("break_sprite"):
+		body.hitpoints -= 1
+		if body.hitpoints < 1:
+			body.break_sprite()
+		else:
+			body.animation_player.play("hit")

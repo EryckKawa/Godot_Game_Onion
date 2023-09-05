@@ -1,7 +1,8 @@
 res://scripts
+res://prefabs
+res://worlds
 res://singletons
 res://assets/Sprite Pack 2/4 - Robo Pumpkin
-res://prefabs
 res://actors
 res://audio
 res://shaders
